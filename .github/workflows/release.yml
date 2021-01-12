@@ -2,7 +2,7 @@
 name: Trigger on release
 
 on:
-release
+  release
 #    types: created, edited #change to published when ready for production
 
 jobs:
