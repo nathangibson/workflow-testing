@@ -15,5 +15,5 @@ jobs:
         uses: actions/github-script@v3
         with:
           script: |
-            const data = context
+            const data = JSON.parse(context)
             console.log(data.payload)
