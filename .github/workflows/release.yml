@@ -5,7 +5,7 @@ on:
     # branches to consider in the event; optional, defaults to all
     # Although the workflow runs on each push to the following branches, the draft release it creates is based on pull requests to these branches.
     branches:
-      - main
+      # - main
       - development
       - release-workflow
 
