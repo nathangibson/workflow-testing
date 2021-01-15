@@ -1,17 +1,1 @@
 
-name: Trigger on release
-
-on:
-  release
-#    types: created, edited #change to published when ready for production
-
-jobs:
-  Test_Github_API:
-    runs-on: ubuntu-latest
-    name: Test Github API values
-    
-    steps:
-      - name: View context attributes
-        uses: actions/github-script@v3
-        with:
-          script: console.log(context.payload.release.assets_url)
