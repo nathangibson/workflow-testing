@@ -23,7 +23,8 @@ jobs:
       - name: Create release
         id: create_release
         uses: release-drafter/release-drafter@v5
-        with:
+        with: $PREVIOUS_TAG
+          tag: 
           config-name: release-drafter.yml # DON'T merge this change into the master branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
